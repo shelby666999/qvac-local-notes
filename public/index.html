@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QVAC Local Notes</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div class="badge">QVAC • ON-DEVICE AI</div>
+      <h1>Local Notes</h1>
+      <p>
+        Ask questions about your notes with an AI assistant designed
+        to run locally on your device.
+      </p>
+    </section>
+
+    <section class="card">
+      <label for="note">Your note</label>
+      <textarea
+        id="note"
+        rows="10"
+        placeholder="Paste or write your notes here..."
+      ></textarea>
+
+      <label for="question">Ask a question</label>
+      <div class="question-row">
+        <input
+          id="question"
+          type="text"
+          placeholder="What are the main points?"
+        >
+        <button id="askButton">Ask locally</button>
+      </div>
+
+      <div id="status" class="status">
+        Ready for a local question.
+      </div>
+    </section>
+
+    <section class="card answer-card">
+      <div class="answer-heading">
+        <span>AI answer</span>
+        <span id="localBadge" class="local-badge">LOCAL</span>
+      </div>
+
+      <div id="answer" class="answer">
+        Your answer will appear here.
+      </div>
+    </section>
+
+    <footer>
+      Powered by QVAC on-device AI
+    </footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
