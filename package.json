@@ -1,0 +1,17 @@
+{
+  "name": "qvac-local-notes",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A local-first notes assistant powered by QVAC on-device inference.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@qvac/sdk": "0.19.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
